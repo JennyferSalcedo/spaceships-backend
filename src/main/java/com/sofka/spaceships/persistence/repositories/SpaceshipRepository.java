@@ -8,7 +8,6 @@ import java.util.List;
 
 public interface SpaceshipRepository extends JpaRepository<Spaceship, Long> {
 
-    @Query("Select s from Spaceship s where s.name like %:name%")
     List<Spaceship> findByName(String name);
 
 }
