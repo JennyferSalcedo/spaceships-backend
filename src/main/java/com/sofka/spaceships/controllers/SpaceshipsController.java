@@ -12,7 +12,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("v1/api/spaceships")
-@CrossOrigin(origins = {"http://localhost:5173","http://localhost:8080"})
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "https://spaceships-frontend.herokuapp.com"
+})
 public class SpaceshipsController {
 
     @Autowired
